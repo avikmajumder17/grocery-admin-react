@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { Dashboard } from './pages/dashboard/Dashboard';
 import { NavigationMenu } from './components/layout/NavigationMenu.js';
 import { Header } from './components/layout/Header.js';
 

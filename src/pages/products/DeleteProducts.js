@@ -1280,7 +1280,7 @@ export const DeleteProducts = () => {
                           <img
                             src="./assets/images/avatar/2.png"
                             className="img-fluid"
-                            alt="image"
+                            alt=" "
                           />
                         </Link>
                         <Link
@@ -1293,7 +1293,7 @@ export const DeleteProducts = () => {
                           <img
                             src="./assets/images/avatar/3.png"
                             className="img-fluid"
-                            alt="image"
+                            alt=" "
                           />
                         </Link>
                         <Link
@@ -1306,7 +1306,7 @@ export const DeleteProducts = () => {
                           <img
                             src="./assets/images/avatar/4.png"
                             className="img-fluid"
-                            alt="image"
+                            alt=" "
                           />
                         </Link>
                         <Link
@@ -1319,7 +1319,7 @@ export const DeleteProducts = () => {
                           <img
                             src="./assets/images/avatar/6.png"
                             className="img-fluid"
-                            alt="image"
+                            alt=" "
                           />
                         </Link>
                         <Link
@@ -1367,7 +1367,7 @@ export const DeleteProducts = () => {
                           <img
                             src="./assets/images/avatar/2.png"
                             className="img-fluid"
-                            alt="image"
+                            alt=" "
                           />
                         </Link>
                         <Link
@@ -1380,7 +1380,7 @@ export const DeleteProducts = () => {
                           <img
                             src="./assets/images/avatar/3.png"
                             className="img-fluid"
-                            alt="image"
+                            alt=" "
                           />
                         </Link>
                         <Link
@@ -1393,7 +1393,7 @@ export const DeleteProducts = () => {
                           <img
                             src="./assets/images/avatar/5.png"
                             className="img-fluid"
-                            alt="image"
+                            alt=" "
                           />
                         </Link>
                         <Link
@@ -1406,7 +1406,7 @@ export const DeleteProducts = () => {
                           <img
                             src="./assets/images/avatar/6.png"
                             className="img-fluid"
-                            alt="image"
+                            alt=" "
                           />
                         </Link>
                         <Link
@@ -1454,7 +1454,7 @@ export const DeleteProducts = () => {
                           <img
                             src="./assets/images/avatar/2.png"
                             className="img-fluid"
-                            alt="image"
+                            alt=" "
                           />
                         </Link>
                         <Link
@@ -1467,7 +1467,7 @@ export const DeleteProducts = () => {
                           <img
                             src="./assets/images/avatar/3.png"
                             className="img-fluid"
-                            alt="image"
+                            alt=" "
                           />
                         </Link>
                         <Link
@@ -1480,7 +1480,7 @@ export const DeleteProducts = () => {
                           <img
                             src="./assets/images/avatar/4.png"
                             className="img-fluid"
-                            alt="image"
+                            alt=" "
                           />
                         </Link>
                         <Link
@@ -1493,7 +1493,7 @@ export const DeleteProducts = () => {
                           <img
                             src="./assets/images/avatar/5.png"
                             className="img-fluid"
-                            alt="image"
+                            alt=" "
                           />
                         </Link>
                         <Link
@@ -1541,7 +1541,7 @@ export const DeleteProducts = () => {
                           <img
                             src="./assets/images/avatar/2.png"
                             className="img-fluid"
-                            alt="image"
+                            alt=" "
                           />
                         </Link>
                         <Link
@@ -1554,7 +1554,7 @@ export const DeleteProducts = () => {
                           <img
                             src="./assets/images/avatar/4.png"
                             className="img-fluid"
-                            alt="image"
+                            alt=" "
                           />
                         </Link>
                         <Link
@@ -1567,7 +1567,7 @@ export const DeleteProducts = () => {
                           <img
                             src="./assets/images/avatar/5.png"
                             className="img-fluid"
-                            alt="image"
+                            alt=" "
                           />
                         </Link>
                         <Link
@@ -1580,7 +1580,7 @@ export const DeleteProducts = () => {
                           <img
                             src="./assets/images/avatar/6.png"
                             className="img-fluid"
-                            alt="image"
+                            alt=" "
                           />
                         </Link>
                         <Link

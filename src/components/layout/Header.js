@@ -46,7 +46,7 @@ export const Header = ({ navToggle, setNavToggle }) => {
                     {/*! [Start] nxl-lavel-mega-menu !*/}
                     <div className="nxl-drp-link nxl-lavel-mega-menu">
                         <div className="nxl-lavel-mega-menu-toggle d-flex d-lg-none">
-                            <Link to="javascript:void(0)" id="nxl-lavel-mega-menu-hide">
+                            <Link to="/" id="nxl-lavel-mega-menu-hide">
                                 <i className="feather-arrow-left me-2" />
                                 <span>Back</span>
                             </Link>
