@@ -1,24 +1,36 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
+import { Dashboard } from './pages/dashboard/Dashboard';
+import { NavigationMenu } from './components/layout/NavigationMenu.js';
+import { Header } from './components/layout/Header.js';
+
+import "../node_modules/bootstrap/dist/css/bootstrap.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.js";
+
+import "./assets/css/theme.min.css";
 import './App.css';
+import { AllRoutes } from './routes/AllRoutes.js';
+
+
 
 function App() {
+  const [navToggle, setNavToggle] = useState(false);
+
+  useEffect(() => {
+    const html = document.querySelector("html");
+
+    navToggle ? html.classList.add("minimenu") : html.classList.remove("minimenu");
+  }, [navToggle]);
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavigationMenu navToggle={navToggle} />
+
+      <Header navToggle={navToggle} setNavToggle={setNavToggle} />
+
+      <AllRoutes navToggle={navToggle} />
+    </>
   );
 }
 
