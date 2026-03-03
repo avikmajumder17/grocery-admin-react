@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export const NavigationMenu = ({ navToggle }) => {
+export const NavigationMenu = () => {
     return (
         <nav className="nxl-navigation">
             <div className="navbar-wrapper">
@@ -25,7 +25,7 @@ export const NavigationMenu = ({ navToggle }) => {
                             <label>Navigation</label>
                         </li>
                         <li className="nxl-item nxl-hasmenu">
-                            <Link to="/" className="nxl-link">
+                            <Link to="/" className="nxl-link" end>
                                 <span className="nxl-micon">
                                     <i className="feather-airplay" />
                                 </span>
@@ -51,7 +51,7 @@ export const NavigationMenu = ({ navToggle }) => {
                         <li className="nxl-item nxl-hasmenu">
                             <Link to="/" className="nxl-link">
                                 <span className="nxl-micon">
-                                    <i className="feather-cast" />
+                                    <i className="feather-bar-chart" />
                                 </span>
                                 <span className="nxl-mtext">Reports</span>
                                 <span className="nxl-arrow">
@@ -82,10 +82,10 @@ export const NavigationMenu = ({ navToggle }) => {
                             </ul>
                         </li>
 
-                        <li className="nxl-item nxl-hasmenu active">
+                        <li className="nxl-item nxl-hasmenu">
                             <Link to="/products" className="nxl-link">
                                 <span className="nxl-micon">
-                                    <i className="feather-cast" />
+                                    <i className="feather-box" />
                                 </span>
                                 <span className="nxl-mtext">Products</span>
                                 <span className="nxl-arrow">

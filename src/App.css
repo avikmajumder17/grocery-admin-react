@@ -1,11 +1,25 @@
 @import "./assets/vendors/css/feather.min.css";
 @import "./assets/vendors/css/animate.min.css";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
 .navbar-content .nxl-submenu{
     display: none;
 }
 
-.navbar-content .nxl-hasmenu.active .nxl-submenu{
+.navbar-content .nxl-hasmenu .nxl-submenu{
+    height: 0;
+    opacity: 0;
+    z-index: -99;
+}
+
+.navbar-content .nxl-hasmenu:hover .nxl-submenu{
+    height: auto;
+    opacity: 1;
+    z-index: initial;
+    transition: all 0.3s ease;
+}
+
+.navbar-content .nxl-hasmenu .nxl-submenu{
     display: block;
 }
 

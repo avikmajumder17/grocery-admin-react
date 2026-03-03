@@ -64,3 +64,11 @@
 }
 
 /* radio start */
+
+.delete-product{
+    color: red;
+}
+
+.product-update{
+    color: rgb(45, 72, 245);
+}
