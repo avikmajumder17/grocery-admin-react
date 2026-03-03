@@ -168,17 +168,19 @@ export const DeleteProducts = () => {
         {/* [ page-header ] end */}
         {/* [ Main Content ] start */}
         <div className="main-content">
-          <DataTable data={tableData} className="display">
-            <thead>
-              <tr>
-                <th>Name</th>
-                
-                <th>Position</th>
+          <div className="bg-white p-4 rounded-2">
+            <DataTable data={tableData} className="display">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  
+                  <th>Position</th>
 
-                <th>Edit</th>
-              </tr>
-            </thead>
-          </DataTable>
+                  <th>Edit</th>
+                </tr>
+              </thead>
+            </DataTable>
+          </div>          
         </div>
         {/* [ Main Content ] end */}
       </div>

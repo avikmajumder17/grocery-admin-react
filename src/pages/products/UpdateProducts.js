@@ -168,7 +168,7 @@ export const UpdateProducts = () => {
         {/* [ page-header ] end */}
         {/* [ Main Content ] start */}
         <div className="main-content">
-          <form className="bg-white p-4 rounded-2">
+          <div className="bg-white p-4 rounded-2">
             <DataTable data={tableData} className="display">
               <thead>
                 <tr>
@@ -180,7 +180,7 @@ export const UpdateProducts = () => {
                 </tr>
               </thead>
             </DataTable>
-          </form>
+          </div>
         </div>
         {/* [ Main Content ] end */}
       </div>
