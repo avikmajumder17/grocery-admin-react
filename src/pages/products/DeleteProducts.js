@@ -10,6 +10,7 @@ DataTable.use(DT);
 
 
 export const DeleteProducts = () => {
+  // eslint-disable-next-line
   const [tableData, setTableData] = useState([
     [ 'Tiger Nixon', 'System Architect', `<i class="bi delete-product bi-trash3"></i>` ],
     [ 'Garrett Winters', 'Accountant', `<i class="bi delete-product bi-trash3"></i>` ],

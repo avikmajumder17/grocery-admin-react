@@ -10,6 +10,7 @@ DataTable.use(DT);
 
 
 export const UpdateProducts = () => {
+  // eslint-disable-next-line
   const [tableData, setTableData] = useState([
     [ 'Tiger Nixon', 'System Architect', `<i class="bi product-update bi-pencil-square"></i>` ],
     [ 'Garrett Winters', 'Accountant', `<i class="bi product-update bi-pencil-square"></i>` ],
