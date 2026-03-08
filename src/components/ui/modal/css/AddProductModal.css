@@ -1,0 +1,32 @@
+.addproductmodal-backdrop{
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.1s ease;
+}
+
+.addproductmodal-backdrop-hide{
+    z-index: -9999;
+    opacity: 0;
+    visibility: hidden;    
+}
+
+.addproductmodal{
+    width: 800px;
+    max-width: 90%;
+    z-index: 99999;    
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.1s ease;
+}
+
+.addProductModal-hide{
+    z-index: -99999;
+    opacity: 0;
+    visibility: hidden;    
+}
+
+.addproductmodal-header{
+    border-bottom: 1px solid #e0e0e0;
+}

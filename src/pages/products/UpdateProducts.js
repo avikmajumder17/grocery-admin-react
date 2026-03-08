@@ -4,6 +4,7 @@ import DataTable from 'datatables.net-react';
 import DT from 'datatables.net-dt';
 
 import 'datatables.net-dt/css/dataTables.dataTables.css';
+import { AddProductModal } from "../../components/ui/modal/AddProductModal";
 
 DataTable.use(DT);
 
@@ -12,44 +13,38 @@ DataTable.use(DT);
 export const UpdateProducts = () => {
   // eslint-disable-next-line
   const [tableData, setTableData] = useState([
-    [ 'Tiger Nixon', 'System Architect', `<i class="bi product-update bi-pencil-square"></i>` ],
-    [ 'Garrett Winters', 'Accountant', `<i class="bi product-update bi-pencil-square"></i>` ],
-	// ...
+    ['Tiger Nixon', '200', '20', "product.png", "product.png", "Yes", "No", "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"],
+    ['Garrett Winters', '200', '20', "product.png", "product.png", "Yes", "No", "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"]
   ]);
+  const [addProductModal, setAddProductModal] = useState(false);
 
   return (
-    <main className="nxl-container">
-      <div className="nxl-content">
-        {/* [ page-header ] start */}
-        <div className="page-header">
-          <div className="page-header-left d-flex align-items-center">
-            <div className="page-header-title">
-              <h5 className="m-b-10">Update Product</h5>
-            </div>
-            <ul className="breadcrumb">
-              <li className="breadcrumb-item">
-                <Link to="/">Home</Link>
-              </li>
-              <li className="breadcrumb-item">Update Product</li>
-            </ul>
-          </div>
-          <div className="page-header-right ms-auto">
-            <div className="page-header-right-items">
-              <div className="d-flex d-md-none">
-                <Link
-                  to="/"
-                  className="page-header-right-close-toggle"
-                >
-                  <i className="feather-arrow-left me-2" />
-                  <span>Back</span>
-                </Link>
+    <>
+      <main className="nxl-container">
+        <div className="nxl-content">
+          {/* [ page-header ] start */}
+          <div className="page-header">
+            <div className="page-header-left d-flex align-items-center">
+              <div className="page-header-title">
+                <h5 className="m-b-10">Update Product</h5>
               </div>
-              <div className="d-flex align-items-center gap-2 page-header-right-items-wrapper">
-                <div
-                  id="reportrange"
-                  className="reportrange-picker d-flex align-items-center"
-                >
-                  <span className="reportrange-picker-field" />
+              <ul className="breadcrumb">
+                <li className="breadcrumb-item">
+                  <Link to="/">Home</Link>
+                </li>
+                <li className="breadcrumb-item">Update Product</li>
+              </ul>
+            </div>
+            <div className="page-header-right ms-auto">
+              <div className="page-header-right-items">
+                <div className="d-flex d-md-none">
+                  <Link
+                    to="/"
+                    className="page-header-right-close-toggle"
+                  >
+                    <i className="feather-arrow-left me-2" />
+                    <span>Back</span>
+                  </Link>
                 </div>
                 <div className="dropdown filter-dropdown">
                   <Link
@@ -154,36 +149,74 @@ export const UpdateProducts = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="d-md-none d-flex align-items-center">
-              <Link
-                to="/"
-                className="page-header-right-open-toggle"
-              >
-                <i className="feather-align-right fs-20" />
-              </Link>
+              <div className="d-md-none d-flex align-items-center">
+                <Link
+                  to="/"
+                  className="page-header-right-open-toggle"
+                >
+                  <i className="feather-align-right fs-20" />
+                </Link>
+              </div>
             </div>
           </div>
-        </div>
-        {/* [ page-header ] end */}
-        {/* [ Main Content ] start */}
-        <div className="main-content">
-          <div className="bg-white p-4 rounded-2">
-            <DataTable data={tableData} className="display">
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  
-                  <th>Position</th>
+          {/* [ page-header ] end */}
+          {/* [ Main Content ] start */}
+          <div className="main-content">
+            <div className="bg-white p-4 rounded-2">
+              <DataTable className="display">
+                <thead>
+                  <tr>
+                    <th>Product Name</th>
 
-                  <th>Edit</th>
-                </tr>
-              </thead>
-            </DataTable>
+                    <th>Price</th>
+
+                    <th>Discount</th>
+
+                    <th>Featured Image</th>
+
+                    <th>Small Images</th>
+
+                    <th>Featured Product</th>
+
+                    <th>Best Seller</th>
+
+                    <th>Product Description</th>
+
+                    <th>Edit</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  {tableData.map((tableItem, index) => (
+                    <tr key={index}>
+                      <td>{tableItem[0]}</td>
+
+                      <td>{tableItem[1]}</td>
+
+                      <td>{tableItem[2]}</td>
+
+                      <td>{tableItem[3]}</td>
+
+                      <td>{tableItem[4]}</td>
+
+                      <td>{tableItem[5]}</td>
+
+                      <td>{tableItem[6]}</td>
+
+                      <td>{tableItem[7]}</td>
+
+                      <td><i onClick={() => setAddProductModal(!addProductModal)} className="bi product-update bi-pencil-square"></i></td>
+                    </tr>
+                  ))}
+                </tbody>
+              </DataTable>
+            </div>
           </div>
+          {/* [ Main Content ] end */}
         </div>
-        {/* [ Main Content ] end */}
-      </div>
-    </main>
+      </main>
+
+      <AddProductModal addProductModal={addProductModal} setAddProductModal={setAddProductModal} />
+    </>
   )
 }

@@ -30,25 +30,10 @@ export const NavigationMenu = () => {
                                     <i className="feather-airplay" />
                                 </span>
                                 <span className="nxl-mtext">Dashboards</span>
-                                <span className="nxl-arrow">
-                                    <i className="feather-chevron-right" />
-                                </span>
                             </Link>
-                            <ul className="nxl-submenu">
-                                <li className="nxl-item">
-                                    <Link className="nxl-link" to="/">
-                                        CRM
-                                    </Link>
-                                </li>
-                                <li className="nxl-item">
-                                    <Link className="nxl-link" to="analytics.html">
-                                        Analytics
-                                    </Link>
-                                </li>
-                            </ul>
                         </li>
 
-                        <li className="nxl-item nxl-hasmenu">
+                        {/* <li className="nxl-item nxl-hasmenu">
                             <Link to="/" className="nxl-link">
                                 <span className="nxl-micon">
                                     <i className="feather-bar-chart" />
@@ -80,7 +65,7 @@ export const NavigationMenu = () => {
                                     </Link>
                                 </li>
                             </ul>
-                        </li>
+                        </li> */}
 
                         <li className="nxl-item nxl-hasmenu">
                             <Link to="/products" className="nxl-link">
@@ -111,7 +96,7 @@ export const NavigationMenu = () => {
                             </ul>
                         </li>
                         
-                        <li className="nxl-item nxl-hasmenu">
+                        {/* <li className="nxl-item nxl-hasmenu">
                             <Link to="/" className="nxl-link">
                                 <span className="nxl-micon">
                                     <i className="feather-dollar-sign" />
@@ -138,9 +123,9 @@ export const NavigationMenu = () => {
                                     </Link>
                                 </li>
                             </ul>
-                        </li>
+                        </li> */}
 
-                        <li className="nxl-item nxl-hasmenu">
+                        {/* <li className="nxl-item nxl-hasmenu">
                             <Link to="/" className="nxl-link">
                                 <span className="nxl-micon">
                                     <i className="feather-users" />
@@ -167,7 +152,7 @@ export const NavigationMenu = () => {
                                     </Link>
                                 </li>
                             </ul>
-                        </li>
+                        </li> */}
                         
                         <li className="nxl-item nxl-hasmenu">
                             <Link to="/" className="nxl-link">
@@ -175,256 +160,13 @@ export const NavigationMenu = () => {
                                     <i className="feather-settings" />
                                 </span>
                                 <span className="nxl-mtext">Settings</span>
-                                <span className="nxl-arrow">
+                                {/* <span className="nxl-arrow">
                                     <i className="feather-chevron-right" />
-                                </span>
+                                </span> */}
                             </Link>
-                            <ul className="nxl-submenu">
-                                <li className="nxl-item">
-                                    <Link className="nxl-link" to="settings-general.html">
-                                        General
-                                    </Link>
-                                </li>
-                                <li className="nxl-item">
-                                    <Link className="nxl-link" to="settings-seo.html">
-                                        SEO
-                                    </Link>
-                                </li>
-                                <li className="nxl-item">
-                                    <Link className="nxl-link" to="settings-tags.html">
-                                        Tags
-                                    </Link>
-                                </li>
-                                <li className="nxl-item">
-                                    <Link className="nxl-link" to="settings-email.html">
-                                        Email
-                                    </Link>
-                                </li>
-                                <li className="nxl-item">
-                                    <Link className="nxl-link" to="settings-tasks.html">
-                                        Tasks
-                                    </Link>
-                                </li>
-                                <li className="nxl-item">
-                                    <Link className="nxl-link" to="settings-leads.html">
-                                        Leads
-                                    </Link>
-                                </li>
-                                <li className="nxl-item">
-                                    <Link className="nxl-link" to="settings-support.html">
-                                        Support
-                                    </Link>
-                                </li>
-                                <li className="nxl-item">
-                                    <Link className="nxl-link" to="settings-finance.html">
-                                        Finance
-                                    </Link>
-                                </li>
-                                <li className="nxl-item">
-                                    <Link className="nxl-link" to="settings-gateways.html">
-                                        Gateways
-                                    </Link>
-                                </li>
-                                <li className="nxl-item">
-                                    <Link className="nxl-link" to="settings-customers.html">
-                                        Customers
-                                    </Link>
-                                </li>
-                                <li className="nxl-item">
-                                    <Link className="nxl-link" to="settings-localization.html">
-                                        Localization
-                                    </Link>
-                                </li>
-                                <li className="nxl-item">
-                                    <Link className="nxl-link" to="settings-recaptcha.html">
-                                        reCAPTCHA
-                                    </Link>
-                                </li>
-                                <li className="nxl-item">
-                                    <Link className="nxl-link" to="settings-miscellaneous.html">
-                                        Miscellaneous
-                                    </Link>
-                                </li>
-                            </ul>
                         </li>
 
-                        <li className="nxl-item nxl-hasmenu">
-                            <Link to="/" className="nxl-link">
-                                <span className="nxl-micon">
-                                    <i className="feather-power" />
-                                </span>
-                                <span className="nxl-mtext">Authentication</span>
-                                <span className="nxl-arrow">
-                                    <i className="feather-chevron-right" />
-                                </span>
-                            </Link>
-                            <ul className="nxl-submenu">
-                                <li className="nxl-item nxl-hasmenu">
-                                    <Link to="/" className="nxl-link">
-                                        <span className="nxl-mtext">Login</span>
-                                        <span className="nxl-arrow">
-                                            <i className="feather-chevron-right" />
-                                        </span>
-                                    </Link>
-                                    <ul className="nxl-submenu">
-                                        <li className="nxl-item">
-                                            <Link className="nxl-link" to="./auth-login-cover.html">
-                                                Cover
-                                            </Link>
-                                        </li>
-                                        <li className="nxl-item">
-                                            <Link className="nxl-link" to="./auth-login-minimal.html">
-                                                Minimal
-                                            </Link>
-                                        </li>
-                                        <li className="nxl-item">
-                                            <Link className="nxl-link" to="./auth-login-creative.html">
-                                                Creative
-                                            </Link>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li className="nxl-item nxl-hasmenu">
-                                    <Link to="/" className="nxl-link">
-                                        <span className="nxl-mtext">Register</span>
-                                        <span className="nxl-arrow">
-                                            <i className="feather-chevron-right" />
-                                        </span>
-                                    </Link>
-                                    <ul className="nxl-submenu">
-                                        <li className="nxl-item">
-                                            <Link className="nxl-link" to="./auth-register-cover.html">
-                                                Cover
-                                            </Link>
-                                        </li>
-                                        <li className="nxl-item">
-                                            <Link className="nxl-link" to="./auth-register-minimal.html">
-                                                Minimal
-                                            </Link>
-                                        </li>
-                                        <li className="nxl-item">
-                                            <Link
-                                                className="nxl-link"
-                                                to="./auth-register-creative.html"
-                                            >
-                                                Creative
-                                            </Link>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li className="nxl-item nxl-hasmenu">
-                                    <Link to="/" className="nxl-link">
-                                        <span className="nxl-mtext">Error-404</span>
-                                        <span className="nxl-arrow">
-                                            <i className="feather-chevron-right" />
-                                        </span>
-                                    </Link>
-                                    <ul className="nxl-submenu">
-                                        <li className="nxl-item">
-                                            <Link className="nxl-link" to="./auth-404-cover.html">
-                                                Cover
-                                            </Link>
-                                        </li>
-                                        <li className="nxl-item">
-                                            <Link className="nxl-link" to="./auth-404-minimal.html">
-                                                Minimal
-                                            </Link>
-                                        </li>
-                                        <li className="nxl-item">
-                                            <Link className="nxl-link" to="./auth-404-creative.html">
-                                                Creative
-                                            </Link>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li className="nxl-item nxl-hasmenu">
-                                    <Link to="/" className="nxl-link">
-                                        <span className="nxl-mtext">Reset Pass</span>
-                                        <span className="nxl-arrow">
-                                            <i className="feather-chevron-right" />
-                                        </span>
-                                    </Link>
-                                    <ul className="nxl-submenu">
-                                        <li className="nxl-item">
-                                            <Link className="nxl-link" to="./auth-reset-cover.html">
-                                                Cover
-                                            </Link>
-                                        </li>
-                                        <li className="nxl-item">
-                                            <Link className="nxl-link" to="./auth-reset-minimal.html">
-                                                Minimal
-                                            </Link>
-                                        </li>
-                                        <li className="nxl-item">
-                                            <Link className="nxl-link" to="./auth-reset-creative.html">
-                                                Creative
-                                            </Link>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li className="nxl-item nxl-hasmenu">
-                                    <Link to="/" className="nxl-link">
-                                        <span className="nxl-mtext">Verify OTP</span>
-                                        <span className="nxl-arrow">
-                                            <i className="feather-chevron-right" />
-                                        </span>
-                                    </Link>
-                                    <ul className="nxl-submenu">
-                                        <li className="nxl-item">
-                                            <Link className="nxl-link" to="./auth-verify-cover.html">
-                                                Cover
-                                            </Link>
-                                        </li>
-                                        <li className="nxl-item">
-                                            <Link className="nxl-link" to="./auth-verify-minimal.html">
-                                                Minimal
-                                            </Link>
-                                        </li>
-                                        <li className="nxl-item">
-                                            <Link className="nxl-link" to="./auth-verify-creative.html">
-                                                Creative
-                                            </Link>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li className="nxl-item nxl-hasmenu">
-                                    <Link to="/" className="nxl-link">
-                                        <span className="nxl-mtext">Maintenance</span>
-                                        <span className="nxl-arrow">
-                                            <i className="feather-chevron-right" />
-                                        </span>
-                                    </Link>
-                                    <ul className="nxl-submenu">
-                                        <li className="nxl-item">
-                                            <Link
-                                                className="nxl-link"
-                                                to="./auth-maintenance-cover.html"
-                                            >
-                                                Cover
-                                            </Link>
-                                        </li>
-                                        <li className="nxl-item">
-                                            <Link
-                                                className="nxl-link"
-                                                to="./auth-maintenance-minimal.html"
-                                            >
-                                                Minimal
-                                            </Link>
-                                        </li>
-                                        <li className="nxl-item">
-                                            <Link
-                                                className="nxl-link"
-                                                to="./auth-maintenance-creative.html"
-                                            >
-                                                Creative
-                                            </Link>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li className="nxl-item nxl-hasmenu">
+                        {/* <li className="nxl-item nxl-hasmenu">
                             <Link to="/" className="nxl-link">
                                 <span className="nxl-micon">
                                     <i className="feather-life-buoy" />
@@ -451,26 +193,8 @@ export const NavigationMenu = () => {
                                     </Link>
                                 </li>
                             </ul>
-                        </li>
+                        </li> */}
                     </ul>
-
-                    <div className="card text-center">
-                        <div className="card-body">
-                            <i className="feather-sunrise fs-4 text-dark" />
-                            <h6 className="mt-4 text-dark fw-bolder">Downloading Center</h6>
-                            <p className="fs-11 my-3 text-dark">
-                                Duralux is a production ready CRM to get started up and running
-                                easily.
-                            </p>
-                            <Link
-                                to="https://www.themewagon.com/themes/Duralux-admin"
-                                target="_blank"
-                                className="btn btn-primary text-dark w-100"
-                            >
-                                Download Now
-                            </Link>
-                        </div>
-                    </div>
                 </div>
             </div>
         </nav>

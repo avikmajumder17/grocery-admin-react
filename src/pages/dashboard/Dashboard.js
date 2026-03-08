@@ -29,114 +29,106 @@ export const Dashboard = () => {
                                         <span>Back</span>
                                     </Link>
                                 </div>
-                                <div className="d-flex align-items-center gap-2 page-header-right-items-wrapper">
-                                    <div
-                                        id="reportrange"
-                                        className="reportrange-picker d-flex align-items-center"
+                                <div className="dropdown filter-dropdown">
+                                    <Link
+                                        className="btn btn-md btn-light-brand"
+                                        data-bs-toggle="dropdown"
+                                        data-bs-offset="0, 10"
+                                        data-bs-auto-close="outside"
                                     >
-                                        <span className="reportrange-picker-field" />
-                                    </div>
-                                    <div className="dropdown filter-dropdown">
-                                        <Link
-                                            className="btn btn-md btn-light-brand"
-                                            data-bs-toggle="dropdown"
-                                            data-bs-offset="0, 10"
-                                            data-bs-auto-close="outside"
-                                        >
-                                            <i className="feather-filter me-2" />
-                                            <span>Filter</span>
-                                        </Link>
-                                        <div className="dropdown-menu dropdown-menu-end">
-                                            <div className="dropdown-item">
-                                                <div className="custom-control custom-checkbox">
-                                                    <input
-                                                        type="checkbox"
-                                                        className="custom-control-input"
-                                                        id="Role"
-                                                        defaultChecked="checked"
-                                                    />
-                                                    <label
-                                                        className="custom-control-label c-pointer"
-                                                        htmlFor="Role"
-                                                    >
-                                                        Role
-                                                    </label>
-                                                </div>
+                                        <i className="feather-filter me-2" />
+                                        <span>Filter</span>
+                                    </Link>
+                                    <div className="dropdown-menu dropdown-menu-end">
+                                        <div className="dropdown-item">
+                                            <div className="custom-control custom-checkbox">
+                                                <input
+                                                    type="checkbox"
+                                                    className="custom-control-input"
+                                                    id="Role"
+                                                    defaultChecked="checked"
+                                                />
+                                                <label
+                                                    className="custom-control-label c-pointer"
+                                                    htmlFor="Role"
+                                                >
+                                                    Role
+                                                </label>
                                             </div>
-                                            <div className="dropdown-item">
-                                                <div className="custom-control custom-checkbox">
-                                                    <input
-                                                        type="checkbox"
-                                                        className="custom-control-input"
-                                                        id="Team"
-                                                        defaultChecked="checked"
-                                                    />
-                                                    <label
-                                                        className="custom-control-label c-pointer"
-                                                        htmlFor="Team"
-                                                    >
-                                                        Team
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div className="dropdown-item">
-                                                <div className="custom-control custom-checkbox">
-                                                    <input
-                                                        type="checkbox"
-                                                        className="custom-control-input"
-                                                        id="Email"
-                                                        defaultChecked="checked"
-                                                    />
-                                                    <label
-                                                        className="custom-control-label c-pointer"
-                                                        htmlFor="Email"
-                                                    >
-                                                        Email
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div className="dropdown-item">
-                                                <div className="custom-control custom-checkbox">
-                                                    <input
-                                                        type="checkbox"
-                                                        className="custom-control-input"
-                                                        id="Member"
-                                                        defaultChecked="checked"
-                                                    />
-                                                    <label
-                                                        className="custom-control-label c-pointer"
-                                                        htmlFor="Member"
-                                                    >
-                                                        Member
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div className="dropdown-item">
-                                                <div className="custom-control custom-checkbox">
-                                                    <input
-                                                        type="checkbox"
-                                                        className="custom-control-input"
-                                                        id="Recommendation"
-                                                        defaultChecked="checked"
-                                                    />
-                                                    <label
-                                                        className="custom-control-label c-pointer"
-                                                        htmlFor="Recommendation"
-                                                    >
-                                                        Recommendation
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div className="dropdown-divider" />
-                                            <Link to="/" className="dropdown-item">
-                                                <i className="feather-plus me-3" />
-                                                <span>Create New</span>
-                                            </Link>
-                                            <Link to="/" className="dropdown-item">
-                                                <i className="feather-filter me-3" />
-                                                <span>Manage Filter</span>
-                                            </Link>
                                         </div>
+                                        <div className="dropdown-item">
+                                            <div className="custom-control custom-checkbox">
+                                                <input
+                                                    type="checkbox"
+                                                    className="custom-control-input"
+                                                    id="Team"
+                                                    defaultChecked="checked"
+                                                />
+                                                <label
+                                                    className="custom-control-label c-pointer"
+                                                    htmlFor="Team"
+                                                >
+                                                    Team
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div className="dropdown-item">
+                                            <div className="custom-control custom-checkbox">
+                                                <input
+                                                    type="checkbox"
+                                                    className="custom-control-input"
+                                                    id="Email"
+                                                    defaultChecked="checked"
+                                                />
+                                                <label
+                                                    className="custom-control-label c-pointer"
+                                                    htmlFor="Email"
+                                                >
+                                                    Email
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div className="dropdown-item">
+                                            <div className="custom-control custom-checkbox">
+                                                <input
+                                                    type="checkbox"
+                                                    className="custom-control-input"
+                                                    id="Member"
+                                                    defaultChecked="checked"
+                                                />
+                                                <label
+                                                    className="custom-control-label c-pointer"
+                                                    htmlFor="Member"
+                                                >
+                                                    Member
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div className="dropdown-item">
+                                            <div className="custom-control custom-checkbox">
+                                                <input
+                                                    type="checkbox"
+                                                    className="custom-control-input"
+                                                    id="Recommendation"
+                                                    defaultChecked="checked"
+                                                />
+                                                <label
+                                                    className="custom-control-label c-pointer"
+                                                    htmlFor="Recommendation"
+                                                >
+                                                    Recommendation
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div className="dropdown-divider" />
+                                        <Link to="/" className="dropdown-item">
+                                            <i className="feather-plus me-3" />
+                                            <span>Create New</span>
+                                        </Link>
+                                        <Link to="/" className="dropdown-item">
+                                            <i className="feather-filter me-3" />
+                                            <span>Manage Filter</span>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
